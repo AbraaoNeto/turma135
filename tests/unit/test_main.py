@@ -84,3 +84,18 @@ def teste_somar_leitura_de_lista(numero_a, numero_b, resultado_esperado):
     resultado_obtido = somar(numero_a, numero_b)
 
     assert resultado_obtido == resultado_esperado
+
+@pytest.mark.parametrize('numero_a, numero_b, resultado_esperado',ler_csv('C:\\Users\Sabrina\\turma134\\Vendors\\csv\\massa_de_teste_subtrair.csv'))
+def teste_subtrair_leitura_de_lista(numero_a, numero_b, resultado_esperado):
+
+    numero_a = 10
+    numero_b = 20
+
+    resultado_esperado = 30
+
+    resultado_obtido = somar(numero_a, numero_b)
+
+    assert resultado_obtido == resultado_esperado
+
+
+
