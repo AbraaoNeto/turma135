@@ -13,6 +13,9 @@ def somar(numero_a, numero_b):
     return numero_a + numero_b
 
 
+def somar_lista(numero_a, numero_b):
+    return numero_a + numero_b
+
 def subtrair(numero_a, numero_b):
     return numero_a - numero_b
 
@@ -28,7 +31,19 @@ def dividir(numero_a, numero_b):
         return 'Nao dividiras por zero'
 ## Obs: o try except é um segunda opção de erro ou que não pode ser execultada.
 
-def test_somar():
+
+lista_de_valores = [
+
+    (8, 7, 15),
+    (30, 20, 50),
+    (25, 0, 25),
+    (-5, 12, 7)
+]
+
+@pytest.mark.parametrize('numero_a, numero_b, resultado_esperado', lista_de_valores)
+def teste_somar_leitura_de_lista(numero_a, numero_b, resultado_esperado):
+
+
     numero_a = 10
     numero_b = 20
 
@@ -84,4 +99,4 @@ def test_dividir_negativo():
     resultado_obtido = dividir(numero_a,  numero_b)
     assert resultado_obtido == resultado_eperado
 
-##abra
+##abraaonetho
