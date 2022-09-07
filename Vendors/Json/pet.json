@@ -1,0 +1,18 @@
+{
+  "id": 4859374,
+  "category": {
+    "id": 1,
+    "name": "cachorro"
+  },
+  "name": "peludo",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "vacinado"
+    }
+  ],
+  "status": "available"
+}
