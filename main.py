@@ -95,8 +95,3 @@ def test_dividir_negativo():
     numero_b = 0
 
     resultado_eperado = 'Nao dividiras por zero'
-
-    resultado_obtido = dividir(numero_a,  numero_b)
-    assert resultado_obtido == resultado_eperado
-
-##abraaonetho
